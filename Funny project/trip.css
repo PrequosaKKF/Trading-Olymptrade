@@ -1,0 +1,151 @@
+html {
+    font-size: 1.3em;
+}
+/* import anything */
+@font-face {
+    font-family: "TH Sarabun";
+    src: url(THSarabunNew.ttf);
+}
+/* main element style */
+body {
+    background-color: beige;
+    word-wrap: break-word;
+}
+header {
+    background-color: cornflowerblue;
+    font-family:'Times New Roman', Times, serif;
+    font-style:bolder;
+    font-size:large;
+    text-align: center;
+}
+.flex-container {
+    display:flex;
+}
+.flex .flex-container div {
+    padding:1%;
+}
+.flex {
+    flex:90%;
+    padding: 1%;
+    background-color: aliceblue;
+}
+.flexint {
+    flex: 20%;
+    border: solid darkblue;
+    padding: 1%;
+    background-color: rgb(72, 192, 192);
+}
+#vertical {
+    border: solid darkblue;
+    padding: 1%;
+    background-color: rgb(72, 192, 192);
+}
+.time {
+    flex:15%;
+    border: solid thin;
+}
+.activity {
+    flex:60%;
+    border: solid thin;
+}
+.place {
+    flex:25%;
+    border: solid thin;
+}
+img {
+    width:98%;
+    padding:1%;
+}
+/* Document style */
+h1 {
+  font-family: "TH Sarabun";
+}
+.flexint h2 {
+    padding: 1%;
+    margin: 6% 0% 0% 0%;
+    text-align: center;
+    font-style: bold;
+    font-size: larger;
+    background-color: rgba(211, 211, 211, 0.705);
+}
+#vertical h2 {
+    text-align: center;
+    font-style: bold;
+    font-size: larger;
+    background-color: rgba(211, 211, 211, 0.705);
+}
+#vert {
+    flex:25%;
+    width: 100%;
+    height:100%;
+    margin-top:20px;
+    background-color: rgba(211, 211, 211, 0.705);
+}
+h3 {
+    padding: 1%;
+    margin: 1.5% 0% 0% 0%;
+    text-align: center;
+    font-style: bold;
+    font-size: large;
+    background-color: rgba(211, 211, 211, 0.705);
+}
+em1 {
+    border: solid gray thin;
+    padding: 1%;
+    font-style: bold normal;
+}
+#firstday {
+    padding: 0.1% 1%;
+    background-color: rgb(250, 195, 195);
+}
+#secondday {
+    padding:1%;
+    background-color: rgb(255, 193, 170);
+}
+#thirdday {
+    padding:1%;
+    background-color: rgb(248, 229, 168);
+}
+#fourthday {
+    padding:1%;
+    background-color: rgb(255, 254, 170);
+}
+#fifthday {
+    padding:1%;
+    margin:0 0 1.5% 0;
+    background-color: rgb(250, 195, 245);
+}
+.homeofsh {
+    display: block;
+    width:100%;
+    text-align: center;
+    margin: 0 0 8% 0;
+}
+.showhide {
+    width:100%;
+    height:1%;
+    font-size: medium;
+}
+@media (max-width: 1000px) {
+    body {
+        font-size: 0.8em;
+    }
+    .flexint {
+        display:none;
+    }
+    .showhide {
+        width:90%;
+        height:90%;
+        font-size: medium;
+    }
+    .homeofsh {
+        flex:25%;
+        text-align: center;
+        margin-top: 13px;
+    }
+}
+@media (min-width: 1000px) {
+    #vertical {
+        display:none;
+    }
+}
