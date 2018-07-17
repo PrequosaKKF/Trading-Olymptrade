@@ -72,7 +72,9 @@ function doitagain() {
     }
     budget = AdvancedparseFloat(document.getElementById('haha').innerHTML);
     if (document.getElementsByClassName('user-deals-table__body')[1] == undefined) {
-        if (document.getElementsByClassName('user-deals-table__body')[0].firstChild.lastChild.firstChild.firstChild.firstChild.innerHTML == "Your forecast was incorrect") {
+        if (document.getElementsByClassName('user-deals-table__body')[0].firstChild == null) {
+        }
+        else if (document.getElementsByClassName('user-deals-table__body')[0].firstChild.lastChild.firstChild.firstChild.firstChild.innerHTML == "Your forecast was incorrect") {
             if (index == 0) {
                 index = 1;  
             }
