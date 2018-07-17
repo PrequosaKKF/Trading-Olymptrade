@@ -59,11 +59,11 @@ function doitagain() {
     if (AdvancedparseFloat(document.getElementsByClassName('pair-tab pair-tab_selected')[0].firstChild.children[1].innerHTML) < 70) {
         if (document.getElementsByClassName("percent -high -max")[i] == undefined) {
             document.getElementById('pair-managing-add-btn').firstChild.click();
-            setTimeout(function(){ doitagain(bud) }, 1);
+            setTimeout(function(){ doitagain() }, 1);
             return;
         }
         if (document.getElementsByClassName('list__item').item(i).firstChild.children.item(2).children.item(1).innerHTML < 70.0) {
-            setTimeout(function(){ doitagain(bud) }, 300000);
+            setTimeout(function(){ doitagain() }, 300000);
             return;
         }
         document.getElementsByClassName('list__item').item(i).firstChild.children.item(2).children.item(0).firstChild.click();
