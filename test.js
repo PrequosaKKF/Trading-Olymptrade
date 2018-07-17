@@ -39,8 +39,8 @@ var tim = 60;
 
 //defining main-action function
 function initiate() {
-    if (document.getElementsByClassName('count-down_text')[0].innerHTML == "00:00") {
-        doitagain();
+    if (document.getElementsByClassName('count-down_text')[0].innerHTML == "00:01") {
+        setTimeout(function(){ doitagain() }, 500);
         return;
     }
     else {
